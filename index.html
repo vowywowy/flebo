@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="flebo.css">
+	<link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+	<div id="demo" class="big-container">
+		<h1>Layout Stuff</h1>
+		<h2>Regular Containers</h2>
+		<div class="container a">
+			This is a container. max-width: 900px
+		</div>
+		<div class="big-container b">
+			This is a big container. max-width: 1200px
+		</div>
+		<div class="small-container a">
+			This is a small container. max-width: 600px
+		</div>
+
+		<h2>Grided Containers<span>Rows and columns!</span></h2>
+		<div class="big-container">
+			<div class="row">
+				<div class="a column">This shit is flex!</div>
+				<div class="b column">It does it by default!</div>
+				<div class="a column">Neato!</div>
+			</div>
+		</div>
+
+		<h5>If you want minimum width breakpoints, flex can do that too.</h5>
+		<div class="big-container">
+			<div class="row break">
+				<div class="a column">Resize the screen...</div>
+				<div class="b column">To see the breakpoint.</div>
+			</div>
+		</div>
+
+		<h5>Of course you can do unequal column sizes!</h5>
+		<h6>Relative:</h6>
+		<div class="big-container">
+			<div class="row unequal">
+				<div class="a column u">This is 20%</div>
+				<div class="b column">This is the rest.</div>
+			</div>
+		</div>
+		<h6>Fixed:</h6>
+		<div class="big-container">
+			<div class="row unequal fixed">
+				<div class="a column u">This is 200px</div>
+				<div class="b column">This is the rest.</div>
+			</div>
+		</div>
+
+		<h5>But what if you combine them?</h5>
+		<div class="big-container">
+			<div class="row break unequal">
+				<div class="a column u">Oh buddy...</div>
+				<div class="b column">This isn't amatuer hour.</div>
+			</div>
+		</div>
+
+		<h1>Typography</h1>
+		<h1>H1 Heading <span>Subtitle</span></h1>
+		<h2>H2 Heading <span>Subtitle</span></h2>
+		<h3>H3 Heading <span>Subtitle</span></h3>
+		<h4>H4 Heading <span>Subtitle</span></h4>
+		<h5>H5 Heading <span>Subtitle</span></h5>
+		<h6>H6 Heading <span>Subtitle</span></h6>
+		
+		<h2>Blockqoute</h2>
+		<blockquote>
+			<p>I kill Snape on page 69.</p>
+			<cite>Me Myself</cite>
+		</blockquote>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.container,
+.big-container,
+.small-container {
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.container,
+.big-container,
+.small-container {
+	flex-flow: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: 500;
+	margin: 8px 0;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+
+	font-weight: normal;
+	opacity: 0.5;
+}
+
+h1 span:before,
+h2 span:before,
+h3 span:before,
+h4 span:before,
+h5 span:before,
+h6 span:before,
+blockquote cite:before{
+	content: "-";
+	margin: 0 10px;
+}
+
+
+h1 {
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 1.9rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1.1rem;
+}
+
+.container {
+	max-width: 900px;
+}
+
+.big-container {
+	max-width: 1200px;
+}
+
+.small-container {
+	max-width: 600px;
+}
+
+.row {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+}
+
+.column {
+	width: 100%;
+}
+
+.break {
+	flex-flow: row;
+}
+
+@media (max-width: 800px) {
+	.break {
+		flex-flow: row wrap;
+	}
+}
+
+blockquote {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	flex-flow: column;
+	border: solid 1px;
+	border-left: solid 10px;
+	padding: 16px;
+	border-radius: 2px;
+}
+
+blockquote cite {
+	align-self: flex-end;
+	margin-top: 16px;
+}
+
+blockquote p {
+	margin: 0;
+}

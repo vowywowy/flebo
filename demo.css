@@ -1,0 +1,47 @@
+/*
+	Edit these variables for color and spacing.
+	By default padding and margin will use the same values.
+
+*/
+:root {
+	--primary-color: #BDBDBD;
+	--secondary-color: #E0E0E0;
+	--accent-color: ;
+	--padding: 16px;
+	--margin: var(--padding);
+}
+
+.container,
+.big-container,
+.small-container{
+	margin-bottom: var(--margin);
+}
+
+#demo {
+	margin: var(--margin);
+	padding: var(--padding);
+}
+
+.a {
+	background: var(--primary-color);
+}
+
+.b {
+	background: var(--secondary-color);
+}
+
+.unequal .u:nth-of-type(1) {
+	width: 20%;
+}
+
+.fixed .u:nth-of-type(1) {
+	min-width: 200px;
+}
+
+.column{
+	padding: var(--padding);
+}
+
+blockquote {
+	border-color: var(--primary-color);
+}
