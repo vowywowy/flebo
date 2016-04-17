@@ -11,8 +11,6 @@ body {
 	font-size: 1rem;
 	font-family: "Roboto", sans-serif;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 }
 
@@ -23,8 +21,8 @@ h4,
 h5,
 h6,
 .container,
-.big-container,
-.small-container {
+.container-big,
+.container-small {
 	margin: 0;
 	display: flex;
 	justify-content: flex-start;
@@ -32,8 +30,8 @@ h6,
 }
 
 .container,
-.big-container,
-.small-container {
+.container-big,
+.container-small {
 	flex-flow: column;
 }
 
@@ -42,7 +40,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
 	font-weight: 500;
 	margin: 8px 0;
 }
@@ -53,7 +51,6 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-
 	font-weight: normal;
 	opacity: 0.5;
 }
@@ -64,11 +61,10 @@ h3 span:before,
 h4 span:before,
 h5 span:before,
 h6 span:before,
-blockquote cite:before{
+blockquote cite:before {
 	content: "-";
 	margin: 0 10px;
 }
-
 
 h1 {
 	font-size: 2.2rem;
@@ -96,13 +92,14 @@ h6 {
 
 .container {
 	max-width: 900px;
+	align-items: flex-start;
 }
 
-.big-container {
+.big {
 	max-width: 1200px;
 }
 
-.small-container {
+.small {
 	max-width: 600px;
 }
 
@@ -110,10 +107,14 @@ h6 {
 	display: flex;
 	flex-flow: row;
 	width: 100%;
+	height: 100%;
 }
 
 .column {
 	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap;
 }
 
 .break {
@@ -142,6 +143,76 @@ blockquote cite {
 	margin-top: 16px;
 }
 
-blockquote p {
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.center-v {
+	align-items: center;
+}
+
+.center-h {
+	justify-content: center;
+}
+
+.right {
+	justify-content: flex-end;
+}
+
+.bottom {
+	align-items: flex-end;
+}
+
+p {
 	margin: 0;
+	width: 100%;
+}
+
+* p:nth-of-type(n+2) {
+	margin-top: var(--margin);
+}
+
+.indented {
+	text-indent: 3rem;
+}
+
+input[type="button"],
+input[type="submit"],
+button,
+.button
+{
+	display: flex;
+	background: var(--primary-color);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: calc(var(--padding)/2) var(--padding);
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #FFFFFF;
+	border-radius: 2px;
+}
+
+html .accent{
+	background: var(--accent-color);
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover,
+.button:hover{
+	box-shadow: inset 100vh 0 rgba(0,0,0,0.16);
+}
+
+[disabled]{
+	background: #EEEEEE !important;
+	color: #AAAAAA !important;
+	box-shadow: none !important;
+	cursor: default !important;
+}
+
+html body .bgless {
+	background: none;
+	color: var(--accent-color);
 }

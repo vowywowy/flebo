@@ -1,27 +1,36 @@
 <!doctype html>
-<html>
+<html class="center">
 
 <head>
 	<link rel="stylesheet" href="flebo.css">
 	<link rel="stylesheet" href="demo.css">
 </head>
 
-<body>
-	<div id="demo" class="big-container">
+<body class="center">
+	<div id="demo" class="container big">
 		<h1>Layout Stuff</h1>
 		<h2>Regular Containers</h2>
+		<h5>This is a container</h5>
 		<div class="container a">
-			This is a container. max-width: 900px
+			<div class="row">
+				<div class="column">max-width: 900px</div>
+			</div>
 		</div>
-		<div class="big-container b">
-			This is a big container. max-width: 1200px
+		<h5>This is a big container</h5>
+		<div class="container b">
+			<div class="row">
+				<div class="column">max-width: 1200px</div>
+			</div>
 		</div>
-		<div class="small-container a">
-			This is a small container. max-width: 600px
+		<h5>This is a small container</h5>
+		<div class="container a">
+			<div class="row">
+				<div class="column">max-width: 600px</div>
+			</div>
 		</div>
 
 		<h2>Grided Containers<span>Rows and columns!</span></h2>
-		<div class="big-container">
+		<div class="container big">
 			<div class="row">
 				<div class="a column">This shit is flex!</div>
 				<div class="b column">It does it by default!</div>
@@ -30,7 +39,7 @@
 		</div>
 
 		<h5>If you want minimum width breakpoints, flex can do that too.</h5>
-		<div class="big-container">
+		<div class="container big">
 			<div class="row break">
 				<div class="a column">Resize the screen...</div>
 				<div class="b column">To see the breakpoint.</div>
@@ -38,15 +47,15 @@
 		</div>
 
 		<h5>Of course you can do unequal column sizes!</h5>
-		<h6>Relative:</h6>
-		<div class="big-container">
+		<h6>Relative</h6>
+		<div class="container big">
 			<div class="row unequal">
 				<div class="a column u">This is 20%</div>
 				<div class="b column">This is the rest.</div>
 			</div>
 		</div>
-		<h6>Fixed:</h6>
-		<div class="big-container">
+		<h6>Fixed</h6>
+		<div class="container big">
 			<div class="row unequal fixed">
 				<div class="a column u">This is 200px</div>
 				<div class="b column">This is the rest.</div>
@@ -54,29 +63,194 @@
 		</div>
 
 		<h5>But what if you combine them?</h5>
-		<div class="big-container">
+		<div class="container big">
 			<div class="row break unequal">
-				<div class="a column u">Oh buddy...</div>
-				<div class="b column">This isn't amatuer hour.</div>
+				<div class="a column u">Of course!</div>
+				<div class="b column">What do you think this is?!</div>
+			</div>
+		</div>
+
+		<h2>Centering Stuff<span>A breeze with flebo</span></h2>
+		<div class="container big layoutDemo">
+			<div class="row">
+				<div class="a column center">
+					<div class="container small">
+						<div class="row">
+							<div class="b column">Both horizontal and vertical</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="b column center-v">
+					<div class="container small">
+						<div class="row">
+							<div class="a column">Just vertical</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="a column center-h">
+					<div class="container small">
+						<div class="row">
+							<div class="b column">Just horizontal</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Left and Right Alignment<span>Pretty much the same</span></h2>
+		<div class="container big layoutDemo">
+			<div class="row">
+				<div class="a column">
+					<div class="container small">
+						<div class="row">
+							<div class="b column">Left align by default</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="b column right">
+					<div class="container small">
+						<div class="row">
+							<div class="a column">Right align is easy.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Top and Bottom Alignment<span>Also the same</span></h2>
+		<div class="container big layoutDemo">
+			<div class="row">
+				<div class="a column center-h">
+					<div class="container small">
+						<div class="row">
+							<div class="b column">Top align by default</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="b column bottom center-h">
+					<div class="container small">
+						<div class="row">
+							<div class="a column">Bottom align is easy.</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<h1>Typography</h1>
-		<h1>H1 Heading <span>Subtitle</span></h1>
-		<h2>H2 Heading <span>Subtitle</span></h2>
-		<h3>H3 Heading <span>Subtitle</span></h3>
-		<h4>H4 Heading <span>Subtitle</span></h4>
-		<h5>H5 Heading <span>Subtitle</span></h5>
-		<h6>H6 Heading <span>Subtitle</span></h6>
-		
+		<div class="container big">
+			<h1>H1 Heading <span>Subtitle</span></h1>
+			<h2>H2 Heading <span>Subtitle</span></h2>
+			<h3>H3 Heading <span>Subtitle</span></h3>
+			<h4>H4 Heading <span>Subtitle</span></h4>
+			<h5>H5 Heading <span>Subtitle</span></h5>
+			<h6>H6 Heading <span>Subtitle</span></h6>
+		</div>
+
+		<h2>Paragraphing</h2>
+		<h5>Regular</h5>
+		<div class="container big">
+			<div class="row">
+				<div class="column a">
+					<p>Suspendisse laoreet iaculis eros, vitae scelerisque nunc pellentesque ac. Vivamus egestas vestibulum sapien, at vulputate lectus lobortis id. Pellentesque rhoncus venenatis ornare. Proin ac erat condimentum, commodo nunc in, placerat nisi. Aliquam sodales viverra leo euismod molestie. Donec sit amet venenatis felis. Nam ullamcorper, quam nec semper tempus, quam turpis rhoncus sapien, ut iaculis risus ante a mauris. Donec ipsum nisi, lobortis in egestas quis, aliquam quis nibh. Suspendisse sagittis ipsum sed urna sodales auctor. Etiam luctus consequat sapien et semper. In tortor elit, lacinia sit amet erat et, imperdiet interdum tellus. Suspendisse interdum lacus ut pretium laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus posuere nec sem sit amet scelerisque. Donec eget cursus lectus.</p>
+					<p>Etiam ante dui, ultricies et consequat eu, ornare id ex. Proin congue nisl vel quam laoreet tempus. Sed nulla dolor, interdum at lectus id, iaculis viverra turpis. Nulla gravida libero eu massa fermentum malesuada. Nullam ultrices sodales velit quis condimentum. Ut vel tellus bibendum, viverra nunc vel, commodo quam. Vestibulum at libero et nulla eleifend tincidunt. In et neque vel arcu bibendum ultrices eu sit amet mauris. Nunc in consequat est. Donec viverra sem nec sapien maximus, non posuere justo ullamcorper. In finibus lacinia turpis et tristique. Maecenas vitae dui tempus, tempor nulla quis, commodo enim. Vivamus luctus tempor massa, vitae iaculis ante ullamcorper sed. Duis molestie, est quis volutpat faucibus, enim nunc mattis eros, maximus vehicula sapien mi a sapien. Suspendisse sit amet dictum nulla.</p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<h5>Indented</h5>
+		<div class="container big">
+			<div class="row">
+				<div class="column b">
+					<p class="indented">Suspendisse laoreet iaculis eros, vitae scelerisque nunc pellentesque ac. Vivamus egestas vestibulum sapien, at vulputate lectus lobortis id. Pellentesque rhoncus venenatis ornare. Proin ac erat condimentum, commodo nunc in, placerat nisi. Aliquam sodales viverra leo euismod molestie. Donec sit amet venenatis felis. Nam ullamcorper, quam nec semper tempus, quam turpis rhoncus sapien, ut iaculis risus ante a mauris. Donec ipsum nisi, lobortis in egestas quis, aliquam quis nibh. Suspendisse sagittis ipsum sed urna sodales auctor. Etiam luctus consequat sapien et semper. In tortor elit, lacinia sit amet erat et, imperdiet interdum tellus. Suspendisse interdum lacus ut pretium laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus posuere nec sem sit amet scelerisque. Donec eget cursus lectus.</p>
+					<p class="indented">Etiam ante dui, ultricies et consequat eu, ornare id ex. Proin congue nisl vel quam laoreet tempus. Sed nulla dolor, interdum at lectus id, iaculis viverra turpis. Nulla gravida libero eu massa fermentum malesuada. Nullam ultrices sodales velit quis condimentum. Ut vel tellus bibendum, viverra nunc vel, commodo quam. Vestibulum at libero et nulla eleifend tincidunt. In et neque vel arcu bibendum ultrices eu sit amet mauris. Nunc in consequat est. Donec viverra sem nec sapien maximus, non posuere justo ullamcorper. In finibus lacinia turpis et tristique. Maecenas vitae dui tempus, tempor nulla quis, commodo enim. Vivamus luctus tempor massa, vitae iaculis ante ullamcorper sed. Duis molestie, est quis volutpat faucibus, enim nunc mattis eros, maximus vehicula sapien mi a sapien. Suspendisse sit amet dictum nulla.</p>
+				</div>
+			</div>
+		</div>
+
 		<h2>Blockqoute</h2>
-		<blockquote>
-			<p>I kill Snape on page 69.</p>
-			<cite>Me Myself</cite>
-		</blockquote>
+		<div class="container big">
+			<blockquote>
+				<p>I kill Snape on page 69.</p>
+				<cite>Me Myself</cite>
+			</blockquote>
+		</div>
 
+		<h1>Input</h1>
+		<h2>Regular Buttons</h2>
+		<div class="container big">
+			<div class="row">
+				<div class="column b buttonDemo">
+					<input type="button" value="Input">
+					<input type="submit">
+					<button>Button</button>
+					<a class="button">Link</a>
+				</div>
+			</div>
+		</div>
+
+		<h2>Accented Buttons</h2>
+		<div class="container big">
+			<div class="row">
+				<div class="column a buttonDemo">
+					<input class="accent" type="button" value="Input">
+					<input class="accent" type="submit">
+					<button class="accent">Button</button>
+					<a class="button accent">Link</a>
+				</div>
+			</div>
+		</div>
+
+		<h2>Backgroundless Buttons</h2>
+		<div class="container big">
+			<div class="row">
+				<div class="column b buttonDemo">
+					<input class="bgless" type="button" value="Input">
+					<input class="bgless" type="submit">
+					<button class="bgless">Button</button>
+					<a class="button bgless">Link</a>
+				</div>
+			</div>
+		</div>
+
+		<h2>Disabled Buttons</h2>
+		<div class="container big">
+			<div class="row">
+				<div class="column a buttonDemo">
+					<input class="accent" type="button" value="Input" disabled>
+					<input class="accent" type="submit" disabled>
+					<button class="accent" disabled>Button</button>
+					<a class="button accent" disabled>Link</a>
+				</div>
+			</div>
+		</div>
+
+		<h2>Text</h2>
+		<div class="container-big">
+			<div class="row">
+				<div class="column b">
+					<label>Normal
+						<input type="text" placeholder="Placeholder demo text">
+					</label>
+				</div>
+				<div class="column a">
+					<label>Password
+						<input type="password" placeholder="Placeholder demo text">
+					</label>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </body>
 
 </html>

@@ -6,15 +6,14 @@
 :root {
 	--primary-color: #BDBDBD;
 	--secondary-color: #E0E0E0;
-	--accent-color: ;
+	--accent-color: #448AFF;
 	--padding: 16px;
 	--margin: var(--padding);
 }
 
 .container,
-.big-container,
-.small-container{
-	margin-bottom: var(--margin);
+.container-big,
+.container-small{
 }
 
 #demo {
@@ -44,4 +43,12 @@
 
 blockquote {
 	border-color: var(--primary-color);
+}
+
+.layoutDemo > .row{
+	height: 200px;
+}
+
+.buttonDemo{
+	justify-content: space-between;
 }
